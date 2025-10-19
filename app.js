@@ -1,5 +1,5 @@
-var clientId = ""; // your clientId
-var redirectUrl = ""; // your redirect URL - must be localhost URL and/or HTTPS
+const clientId = "244de89a12e446b99a60bdd0892d75ff";
+const redirectUrl = "https://shenlong21.github.io/";
 
 const authorizationEndpoint = "https://accounts.spotify.com/authorize";
 const tokenEndpoint = "https://accounts.spotify.com/api/token";
@@ -165,10 +165,6 @@ async function getUserData() {
 
 // Click handlers
 async function loginWithSpotifyClick() {
-  clientId = document.getElementById("clientId").value;
-  redirectUrl = document.getElementById("redirectUrl").value;
-
-  console.log(clientId, redirectUrl);
   await redirectToSpotifyAuthorize();
 }
 

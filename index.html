@@ -13,8 +13,6 @@
 
   <template id="login">
     <h1>Welcome to Musify</h1>
-    <input type="text" id="clientId" placeholder="Client ID" />
-    <input type="url" id="redirectUrl" placeholder="Redirect URI" />
     <button id="login-button" data-bind-onclick="loginWithSpotifyClick();"> Log in with Spotify </button>
   </template>
 
@@ -81,6 +79,13 @@
   </template>
 
   <script src="app.js" defer></script>
+  <script>
+    // Initialize the application
+    document.addEventListener("DOMContentLoaded", function () {
+      // Your initialization code here
+      init();
+    });
+  </script>
 </body>
 
 </html>
